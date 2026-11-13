@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 214" width="880" height="214" role="img" aria-label="GitHub Activity Overview" font-family="'Segoe UI', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif">
+  <defs>
+    <linearGradient id="actFill-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="barShimmer-dark" x1="-100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;150%" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;250%" dur="3.8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="langBarClip-dark">
+      <rect x="468.0" y="58.0" width="392.0" height="10.0" rx="5"/>
+    </clipPath>
+  </defs>
+
+  <!-- Left Card: Weekly Activity Trend -->
+  <rect x="0.5" y="0.5" width="431" height="213" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="26" cy="29" r="4" fill="#3fb950"/>
+  <circle cx="26" cy="29" r="4" fill="#3fb950" opacity="0.5">
+    <animate attributeName="r" values="4;10;4" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0;0.55" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="38" y="34" fill="#f0f6fc" font-size="14" font-weight="700">주간 활동 추이</text>
+  <text x="410" y="34" text-anchor="end" fill="#8b949e" font-size="11.5">최근 16주 공개 기준</text>
+
+  <rect x="20" y="50" width="392" height="110" rx="8" fill="#161b22"/>
+  <line x1="26" y1="84" x2="406" y2="84" stroke="#21262d" stroke-dasharray="3 3"/>
+  <line x1="26" y1="118" x2="406" y2="118" stroke="#21262d" stroke-dasharray="3 3"/>
+  <line x1="26" y1="152" x2="406" y2="152" stroke="#21262d"/>
+  <path d="M 26.0 146.0 C 38.7 146.0, 38.7 146.0, 51.3 146.0 C 64.0 146.0, 64.0 146.0, 76.7 146.0 C 89.3 146.0, 89.3 146.0, 102.0 146.0 C 114.7 146.0, 114.7 146.0, 127.3 146.0 C 140.0 146.0, 140.0 146.0, 152.7 146.0 C 165.3 146.0, 165.3 146.0, 178.0 146.0 C 190.7 146.0, 190.7 146.0, 203.3 146.0 C 216.0 146.0, 216.0 146.0, 228.7 146.0 C 241.3 146.0, 241.3 146.0, 254.0 146.0 C 266.7 146.0, 266.7 146.0, 279.3 146.0 C 292.0 146.0, 292.0 146.0, 304.7 146.0 C 317.3 146.0, 317.3 106.0, 330.0 106.0 C 342.7 106.0, 342.7 146.0, 355.3 146.0 C 368.0 146.0, 368.0 146.0, 380.7 146.0 C 393.3 146.0, 393.3 66.0, 406.0 66.0 L 406.0 152.0 L 26.0 152.0 Z" fill="url(#actFill-dark)"/>
+  <path id="actLine-dark" d="M 26.0 146.0 C 38.7 146.0, 38.7 146.0, 51.3 146.0 C 64.0 146.0, 64.0 146.0, 76.7 146.0 C 89.3 146.0, 89.3 146.0, 102.0 146.0 C 114.7 146.0, 114.7 146.0, 127.3 146.0 C 140.0 146.0, 140.0 146.0, 152.7 146.0 C 165.3 146.0, 165.3 146.0, 178.0 146.0 C 190.7 146.0, 190.7 146.0, 203.3 146.0 C 216.0 146.0, 216.0 146.0, 228.7 146.0 C 241.3 146.0, 241.3 146.0, 254.0 146.0 C 266.7 146.0, 266.7 146.0, 279.3 146.0 C 292.0 146.0, 292.0 146.0, 304.7 146.0 C 317.3 146.0, 317.3 106.0, 330.0 106.0 C 342.7 106.0, 342.7 146.0, 355.3 146.0 C 368.0 146.0, 368.0 146.0, 380.7 146.0 C 393.3 146.0, 393.3 66.0, 406.0 66.0" fill="none" stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="330.0" cy="106.0" r="3.5" fill="#0d1117" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="406.0" cy="66.0" r="3.5" fill="#0d1117" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="406.0" cy="66.0" r="4.5" fill="#3fb950"/>
+  <circle r="4" fill="#22d3ee" opacity="0.9">
+    <animateMotion dur="5.5s" repeatCount="indefinite">
+      <mpath href="#actLine-dark"/>
+    </animateMotion>
+  </circle>
+
+  <rect x="20" y="172" width="110" height="24" rx="6" fill="#111c2d" stroke="#1f3a5f"/>
+  <text x="75" y="188" text-anchor="middle" fill="#79c0ff" font-size="11.5" font-weight="600">Since 2021</text>
+  <rect x="138" y="172" width="128" height="24" rx="6" fill="#111c2d" stroke="#1f3a5f"/>
+  <text x="202" y="188" text-anchor="middle" fill="#79c0ff" font-size="11.5" font-weight="600">공개 저장소 1개</text>
+  <rect x="274" y="172" width="138" height="24" rx="6" fill="#111c2d" stroke="#1f3a5f"/>
+  <text x="343" y="188" text-anchor="middle" fill="#79c0ff" font-size="11.5" font-weight="600">최근 Push 2026-10-20</text>
+
+  <!-- Right Card: Languages & Recent Public Commits -->
+  <rect x="448.5" y="0.5" width="431" height="213" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="468" y="34" fill="#f0f6fc" font-size="14" font-weight="700">사용 언어 및 최근 커밋</text>
+  <text x="860" y="34" text-anchor="end" fill="#8b949e" font-size="11.5">Public Repos</text>
+  <g clip-path="url(#langBarClip-dark)">
+    <rect x="468.0" y="58.0" width="392.0" height="10.0" fill="#21262d"/>
+      <rect x="468.0" y="58.0" width="359.9" height="10.0" fill="#f1e05a"/>
+      <rect x="827.9" y="58.0" width="32.1" height="10.0" fill="#384d54"/>
+    <rect x="468.0" y="58.0" width="392.0" height="10.0" fill="url(#barShimmer-dark)"/>
+  </g>
+  <circle cx="472.0" cy="80.0" r="4" fill="#f1e05a"/>
+  <text x="482.0" y="84.0" fill="#c9d1d9" font-size="11.5" font-weight="600">JavaScript <tspan fill="#8b949e" font-weight="400">91.8%</tspan></text>
+  <circle cx="668.0" cy="80.0" r="4" fill="#384d54"/>
+  <text x="678.0" y="84.0" fill="#c9d1d9" font-size="11.5" font-weight="600">Dockerfile <tspan fill="#8b949e" font-weight="400">8.2%</tspan></text>
+  <line x1="468" y1="114" x2="860" y2="114" stroke="#21262d"/>
+  <circle cx="473" cy="132.0" r="3" fill="#3fb950"/>
+  <text x="484" y="136.0" fill="#c9d1d9" font-size="11.5" font-weight="600">ecs-alb-express-demo <tspan fill="#8b949e" font-weight="400">· V2</tspan></text>
+  <text x="860" y="136.0" text-anchor="end" fill="#8b949e" font-family="'Cascadia Mono', Consolas, monospace" font-size="11">2026-10-20</text>
+  <circle cx="473" cy="156.0" r="3" fill="#3fb950"/>
+  <text x="484" y="160.0" fill="#c9d1d9" font-size="11.5" font-weight="600">ecs-alb-express-demo <tspan fill="#8b949e" font-weight="400">· Initial ECS + ALB Expre...</tspan></text>
+  <text x="860" y="160.0" text-anchor="end" fill="#8b949e" font-family="'Cascadia Mono', Consolas, monospace" font-size="11">2026-10-20</text>
+</svg>

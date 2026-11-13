@@ -1,0 +1,59 @@
+name: Update Profile README & Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "README.md"
+      - ".github/workflows/update-readme.yml"
+      - ".github/scripts/update_repos.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Contribution Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/snake-light.svg?palette=github-light
+            assets/snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update README repository list & snake block
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: python .github/scripts/update_repos.py
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet README.md assets/activity-light.svg assets/activity-dark.svg assets/snake-light.svg assets/snake-dark.svg 2>/dev/null && [ -z "$(git status --porcelain assets/*.svg)" ]; then
+            echo "No profile updates needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/activity-light.svg assets/activity-dark.svg assets/snake-light.svg assets/snake-dark.svg
+          git commit -m "chore: update public repositories and activity animations [skip ci]"
+          git push

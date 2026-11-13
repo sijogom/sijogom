@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 184" width="880" height="184" role="img" aria-label="sijogom - Backend, Linux, Security">
+  <defs>
+    <linearGradient id="waveGrad-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="55%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <clipPath id="clip-dark">
+      <rect x="0" y="0" width="880" height="184" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip-dark)">
+    <rect x="0" y="0" width="880" height="184" fill="url(#waveGrad-dark)"/>
+
+    <!-- Subtle ambient circles -->
+    <circle cx="150" cy="48" r="3" fill="#93c5fd" fill-opacity="0.35">
+      <animate attributeName="cy" values="48;38;48" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.65;0.25" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="720" cy="54" r="2.5" fill="#6ee7b7" fill-opacity="0.35">
+      <animate attributeName="cy" values="54;64;54" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="7s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Layered Translucent Flowing Waves -->
+    <path d="M 0 122 Q 220 88, 440 122 T 880 122 T 1320 122 T 1760 122 L 1760 184 L 0 184 Z" fill="#0d1117" fill-opacity="0.28">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-880 0" dur="18s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 134 Q 220 164, 440 134 T 880 134 T 1320 134 T 1760 134 L 1760 184 L 0 184 Z" fill="#0d1117" fill-opacity="0.38">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-880 0" dur="13s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 144 Q 220 116, 440 144 T 880 144 T 1320 144 T 1760 144 L 1760 184 L 0 184 Z" fill="#0d1117">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-880 0" dur="10s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Centered Typography -->
+    <text x="440" y="72" text-anchor="middle" fill="#f8fafc" font-family="'Segoe UI', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5">sijogom</text>
+    <text x="440" y="102" text-anchor="middle" fill="#e2e8f0" fill-opacity="0.92" font-family="'Cascadia Mono', 'Consolas', 'Malgun Gothic', monospace" font-size="14.5" font-weight="600">Backend · Linux · Security</text>
+  </g>
+</svg>
