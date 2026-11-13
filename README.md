@@ -50,22 +50,5 @@ Hello
 ## Public Repositories
 
 <!-- REPOS:START -->
-<table>
-  <thead>
-    <tr>
-      <th width="240">Repository</th>
-      <th width="410">Description</th>
-      <th width="120">Language</th>
-      <th width="110">Updated</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/sijogom/ecs-alb-express-demo"><strong>ecs-alb-express-demo</strong></a></td>
-      <td>-</td>
-      <td align="center"><code>JavaScript</code></td>
-      <td align="center"><code>2026&#8209;10</code></td>
-    </tr>
-  </tbody>
-</table>
+No public repositories yet.
 <!-- REPOS:END -->
