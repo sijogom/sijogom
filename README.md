@@ -47,7 +47,7 @@
 </p>
 <!-- SNAKE:END -->
 
-## 공개 저장소
+## Public Repositories
 
 <!-- REPOS:START -->
 <table>
