@@ -7,9 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/sijogom">
-    <img src="https://img.shields.io/badge/GitHub-sijogom-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub sijogom" />
-  </a>
+  <a href="https://github.com/sijogom"><img src="https://img.shields.io/badge/GitHub-sijogom-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub sijogom" /></a>
   <img src="https://img.shields.io/badge/Backend%20%C2%B7%20Linux%20%C2%B7%20Security-0ea5e9?style=for-the-badge" alt="Focus" />
 </p>
 
