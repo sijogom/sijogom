@@ -11,9 +11,7 @@
   <img src="https://img.shields.io/badge/Backend%20%C2%B7%20Linux%20%C2%B7%20Security-0ea5e9?style=for-the-badge" alt="Focus" />
 </p>
 
-## About
-
-Hello
+### Hello
 
 ## Tech Stack
 
@@ -25,14 +23,14 @@ Hello
   </picture>
 </p>
 
-## GitHub Activity
+## Activity
 
 <!-- ACTIVITY:START -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg?v=1f8993dd" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg?v=c2615cfb" />
-    <img src="./assets/activity-light.svg?v=c2615cfb" alt="GitHub Activity Overview" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg?v=ed63ec21" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg?v=706646c1" />
+    <img src="./assets/activity-light.svg?v=706646c1" alt="GitHub Activity Overview" width="100%" />
   </picture>
 </p>
 <!-- ACTIVITY:END -->
@@ -40,15 +38,15 @@ Hello
 <!-- SNAKE:START -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg?v=2905637f" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg?v=40bd7322" />
-    <img src="./assets/snake-light.svg?v=40bd7322" alt="Contribution Snake Animation" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg?v=56c1ff07" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg?v=de5a034d" />
+    <img src="./assets/snake-light.svg?v=de5a034d" alt="Contribution Snake Animation" width="100%" />
   </picture>
 </p>
 <!-- SNAKE:END -->
 
-## Public Repositories
+## Repositories
 
 <!-- REPOS:START -->
-No public repositories yet.
+No repositories yet.
 <!-- REPOS:END -->

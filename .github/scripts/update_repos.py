@@ -552,7 +552,7 @@ def render_activity_svg(theme_name: str, data: dict) -> str:
             '    <animate attributeName="r" values="4;10;4" dur="2.6s" repeatCount="indefinite"/>',
             '    <animate attributeName="opacity" values="0.55;0;0.55" dur="2.6s" repeatCount="indefinite"/>',
             "  </circle>",
-            f'  <text x="38" y="34" fill="{t["title"]}" font-size="14" font-weight="700">Activity</text>',
+            f'  <text x="38" y="34" fill="{t["title"]}" font-size="14" font-weight="700">Contributions</text>',
             f'  <text x="410" y="34" text-anchor="end" fill="{t["muted"]}" font-size="11.5">Last 16 weeks</text>',
             "",
             f'  <rect x="20" y="50" width="392" height="110" rx="8" fill="{t["panel_bg"]}"/>',
@@ -703,7 +703,7 @@ def render_snake_svg(theme_name: str, weeks: list[list[tuple[str, int, int]]]) -
 
 def render_repos_table(repos: list[dict]) -> str:
     if not repos:
-        return "No public repositories yet."
+        return "No repositories yet."
 
     rows = []
     for r in repos:
