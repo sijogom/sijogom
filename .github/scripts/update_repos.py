@@ -498,7 +498,7 @@ def render_activity_svg(theme_name: str, data: dict) -> str:
             f'      <rect x="{bar_x:.1f}" y="{bar_y:.1f}" width="{bar_w:.1f}" height="{bar_h:.1f}" fill="{t["bar_bg"]}"/>'
         )
         legend_items.append(
-            f'  <text x="468" y="86" fill="{t["muted"]}" font-size="11.5">공개 저장소 언어 정보 대기 중</text>'
+            f'  <text x="468" y="86" fill="{t["muted"]}" font-size="11.5">No language data yet</text>'
         )
 
     commit_rows = []
@@ -516,7 +516,7 @@ def render_activity_svg(theme_name: str, data: dict) -> str:
         )
     if not commit_rows:
         commit_rows.append(
-            f'  <text x="468" y="142" fill="{t["muted"]}" font-size="11.5">최근 공개 커밋이 아직 없습니다.</text>'
+            f'  <text x="468" y="142" fill="{t["muted"]}" font-size="11.5">No recent public commits</text>'
         )
 
     grad_id = f"actFill-{theme_name}"
@@ -544,15 +544,15 @@ def render_activity_svg(theme_name: str, data: dict) -> str:
             "    </clipPath>",
             "  </defs>",
             "",
-            "  <!-- Left Card: Weekly Activity Trend -->",
+            "  <!-- Left Card: Weekly Activity -->",
             f'  <rect x="0.5" y="0.5" width="431" height="213" rx="12" fill="{t["card_bg"]}" stroke="{t["card_border"]}"/>',
             f'  <circle cx="26" cy="29" r="4" fill="{t["live"]}"/>',
             f'  <circle cx="26" cy="29" r="4" fill="{t["live"]}" opacity="0.5">',
             '    <animate attributeName="r" values="4;10;4" dur="2.6s" repeatCount="indefinite"/>',
             '    <animate attributeName="opacity" values="0.55;0;0.55" dur="2.6s" repeatCount="indefinite"/>',
             "  </circle>",
-            f'  <text x="38" y="34" fill="{t["title"]}" font-size="14" font-weight="700">주간 활동 추이</text>',
-            f'  <text x="410" y="34" text-anchor="end" fill="{t["muted"]}" font-size="11.5">최근 16주 공개 기준</text>',
+            f'  <text x="38" y="34" fill="{t["title"]}" font-size="14" font-weight="700">Activity</text>',
+            f'  <text x="410" y="34" text-anchor="end" fill="{t["muted"]}" font-size="11.5">Last 16 weeks</text>',
             "",
             f'  <rect x="20" y="50" width="392" height="110" rx="8" fill="{t["panel_bg"]}"/>',
             f'  <line x1="26" y1="84" x2="406" y2="84" stroke="{t["grid_line"]}" stroke-dasharray="3 3"/>',
@@ -568,16 +568,14 @@ def render_activity_svg(theme_name: str, data: dict) -> str:
             "    </animateMotion>",
             "  </circle>",
             "",
-            f'  <rect x="20" y="172" width="110" height="24" rx="6" fill="{t["pill_bg"]}" stroke="{t["pill_border"]}"/>',
-            f'  <text x="75" y="188" text-anchor="middle" fill="{t["pill_text"]}" font-size="11.5" font-weight="600">Since {html.escape(data["created_year"])}</text>',
-            f'  <rect x="138" y="172" width="128" height="24" rx="6" fill="{t["pill_bg"]}" stroke="{t["pill_border"]}"/>',
-            f'  <text x="202" y="188" text-anchor="middle" fill="{t["pill_text"]}" font-size="11.5" font-weight="600">공개 저장소 {data["public_project_count"]}개</text>',
-            f'  <rect x="274" y="172" width="138" height="24" rx="6" fill="{t["pill_bg"]}" stroke="{t["pill_border"]}"/>',
-            f'  <text x="343" y="188" text-anchor="middle" fill="{t["pill_text"]}" font-size="11.5" font-weight="600">최근 Push {html.escape(last_push)}</text>',
+            f'  <rect x="20" y="172" width="191" height="24" rx="6" fill="{t["pill_bg"]}" stroke="{t["pill_border"]}"/>',
+            f'  <text x="115.5" y="188" text-anchor="middle" fill="{t["pill_text"]}" font-size="11.5" font-weight="600">Public Repos: {data["public_project_count"]}</text>',
+            f'  <rect x="221" y="172" width="191" height="24" rx="6" fill="{t["pill_bg"]}" stroke="{t["pill_border"]}"/>',
+            f'  <text x="316.5" y="188" text-anchor="middle" fill="{t["pill_text"]}" font-size="11.5" font-weight="600">Last Push: {html.escape(last_push)}</text>',
             "",
-            "  <!-- Right Card: Languages & Recent Public Commits -->",
+            "  <!-- Right Card: Languages & Recent Commits -->",
             f'  <rect x="448.5" y="0.5" width="431" height="213" rx="12" fill="{t["card_bg"]}" stroke="{t["card_border"]}"/>',
-            f'  <text x="468" y="34" fill="{t["title"]}" font-size="14" font-weight="700">사용 언어 및 최근 커밋</text>',
+            f'  <text x="468" y="34" fill="{t["title"]}" font-size="14" font-weight="700">Languages &amp; Recent Commits</text>',
             f'  <text x="860" y="34" text-anchor="end" fill="{t["muted"]}" font-size="11.5">Public Repos</text>',
             f'  <g clip-path="url(#{clip_bar_id})">',
             f'    <rect x="{bar_x:.1f}" y="{bar_y:.1f}" width="{bar_w:.1f}" height="{bar_h:.1f}" fill="{t["bar_bg"]}"/>',
@@ -712,7 +710,8 @@ def render_repos_table(repos: list[dict]) -> str:
         url = html.escape(r["url"], quote=True)
         desc = html.escape(r["description"].strip()) if r["description"].strip() else "-"
         lang = f"<code>{html.escape(r['language'])}</code>" if r["language"] else "-"
-        updated = f"<code>{html.escape(r['pushed_at'][:7])}</code>" if r["pushed_at"] else "-"
+        updated_text = html.escape(r["pushed_at"][:7]).replace("-", "&#8209;") if r["pushed_at"] else ""
+        updated = f"<code>{updated_text}</code>" if updated_text else "-"
         rows.append(
             "    <tr>\n"
             f'      <td><a href="{url}"><strong>{name}</strong></a></td>\n'
@@ -726,10 +725,10 @@ def render_repos_table(repos: list[dict]) -> str:
         "<table>\n"
         "  <thead>\n"
         "    <tr>\n"
-        '      <th width="28%">Repository</th>\n'
-        '      <th width="46%">Description</th>\n'
-        '      <th width="14%">Language</th>\n'
-        '      <th width="12%">Updated</th>\n'
+        '      <th width="240">Repository</th>\n'
+        '      <th width="410">Description</th>\n'
+        '      <th width="120">Language</th>\n'
+        '      <th width="110">Updated</th>\n'
         "    </tr>\n"
         "  </thead>\n"
         "  <tbody>\n"

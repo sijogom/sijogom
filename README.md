@@ -21,9 +21,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Cgo%2Cts%2Ckotlin%2Cfastapi%2Cnextjs%2Creact%2Cpostgres%2Credis%2Clinux%2Cdocker%2Cnginx%2Caws%2Cterraform%2Cbash%2Cgit&perline=8&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python%2Cgo%2Cts%2Ckotlin%2Cfastapi%2Cnextjs%2Creact%2Cpostgres%2Credis%2Clinux%2Cdocker%2Cnginx%2Caws%2Cterraform%2Cbash%2Cgit&perline=8&theme=light" />
-    <img src="https://skillicons.dev/icons?i=python%2Cgo%2Cts%2Ckotlin%2Cfastapi%2Cnextjs%2Creact%2Cpostgres%2Credis%2Clinux%2Cdocker%2Cnginx%2Caws%2Cterraform%2Cbash%2Cgit&perline=8&theme=light" alt="Tech Stack" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Cts%2Cfastapi%2Cnextjs%2Creact%2Cpostgres%2Credis%2Clinux%2Cdocker%2Cnginx%2Caws%2Cterraform&perline=6&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python%2Cts%2Cfastapi%2Cnextjs%2Creact%2Cpostgres%2Credis%2Clinux%2Cdocker%2Cnginx%2Caws%2Cterraform&perline=6&theme=light" />
+    <img src="https://skillicons.dev/icons?i=python%2Cts%2Cfastapi%2Cnextjs%2Creact%2Cpostgres%2Credis%2Clinux%2Cdocker%2Cnginx%2Caws%2Cterraform&perline=6&theme=light" alt="Tech Stack" />
   </picture>
 </p>
 
@@ -55,10 +55,10 @@
 <table>
   <thead>
     <tr>
-      <th width="28%">Repository</th>
-      <th width="46%">Description</th>
-      <th width="14%">Language</th>
-      <th width="12%">Updated</th>
+      <th width="240">Repository</th>
+      <th width="410">Description</th>
+      <th width="120">Language</th>
+      <th width="110">Updated</th>
     </tr>
   </thead>
   <tbody>
@@ -66,7 +66,7 @@
       <td><a href="https://github.com/sijogom/ecs-alb-express-demo"><strong>ecs-alb-express-demo</strong></a></td>
       <td>-</td>
       <td align="center"><code>JavaScript</code></td>
-      <td align="center"><code>2026-10</code></td>
+      <td align="center"><code>2026&#8209;10</code></td>
     </tr>
   </tbody>
 </table>
