@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import os
@@ -766,6 +767,13 @@ def write_if_changed(path: pathlib.Path, text: str) -> bool:
     return True
 
 
+def versioned_asset_url(root_dir: pathlib.Path, rel_path: str) -> str:
+    """Append an 8-char content hash so GitHub CDN/browser refreshes immediately on SVG changes."""
+    asset_file = root_dir / rel_path
+    digest = hashlib.sha256(asset_file.read_bytes()).hexdigest()[:8]
+    return f"./{rel_path}?v={digest}"
+
+
 def main() -> int:
     owner = os.environ.get("GITHUB_REPOSITORY_OWNER") or "sijogom"
     token = os.environ.get("GITHUB_TOKEN") or None
@@ -795,14 +803,22 @@ def main() -> int:
             new_content,
             ACTIVITY_START,
             ACTIVITY_END,
-            render_picture_block("./assets/activity-light.svg", "./assets/activity-dark.svg", "GitHub Activity Overview"),
+            render_picture_block(
+                versioned_asset_url(root_dir, "assets/activity-light.svg"),
+                versioned_asset_url(root_dir, "assets/activity-dark.svg"),
+                "GitHub Activity Overview",
+            ),
         )
     if SNAKE_START in new_content and SNAKE_END in new_content and snake_light.is_file() and snake_dark.is_file():
         new_content = replace_block(
             new_content,
             SNAKE_START,
             SNAKE_END,
-            render_picture_block("./assets/snake-light.svg", "./assets/snake-dark.svg", "Contribution Snake Animation"),
+            render_picture_block(
+                versioned_asset_url(root_dir, "assets/snake-light.svg"),
+                versioned_asset_url(root_dir, "assets/snake-dark.svg"),
+                "Contribution Snake Animation",
+            ),
         )
 
     if new_content != content:
