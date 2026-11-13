@@ -11,11 +11,11 @@
   <img src="https://img.shields.io/badge/Backend%20%C2%B7%20Linux%20%C2%B7%20Security-0ea5e9?style=for-the-badge" alt="Focus" />
 </p>
 
-## 소개
+## About
 
-안녕하세요
+Hello
 
-## 기술 스택
+## Tech Stack
 
 <p align="center">
   <picture>
@@ -25,7 +25,7 @@
   </picture>
 </p>
 
-## GitHub 활동
+## GitHub Activity
 
 <!-- ACTIVITY:START -->
 <p align="center">

@@ -702,7 +702,7 @@ def render_snake_svg(theme_name: str, weeks: list[list[tuple[str, int, int]]]) -
 
 def render_repos_table(repos: list[dict]) -> str:
     if not repos:
-        return "공개된 저장소가 아직 없습니다."
+        return "No public repositories yet."
 
     rows = []
     for r in repos:
