@@ -30,9 +30,9 @@ Hello
 <!-- ACTIVITY:START -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg?v=061a264f" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg?v=41bd7049" />
-    <img src="./assets/activity-light.svg?v=41bd7049" alt="GitHub Activity Overview" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg?v=1f8993dd" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg?v=c2615cfb" />
+    <img src="./assets/activity-light.svg?v=c2615cfb" alt="GitHub Activity Overview" width="100%" />
   </picture>
 </p>
 <!-- ACTIVITY:END -->
@@ -40,9 +40,9 @@ Hello
 <!-- SNAKE:START -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg?v=56c1ff07" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg?v=de5a034d" />
-    <img src="./assets/snake-light.svg?v=de5a034d" alt="Contribution Snake Animation" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg?v=2905637f" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg?v=40bd7322" />
+    <img src="./assets/snake-light.svg?v=40bd7322" alt="Contribution Snake Animation" width="100%" />
   </picture>
 </p>
 <!-- SNAKE:END -->
