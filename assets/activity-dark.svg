@@ -41,9 +41,9 @@
   </circle>
 
   <rect x="20" y="172" width="191" height="24" rx="6" fill="#111c2d" stroke="#1f3a5f"/>
-  <text x="115.5" y="188" text-anchor="middle" fill="#79c0ff" font-size="11.5" font-weight="600">Public Repos: 0</text>
+  <text x="115.5" y="188" text-anchor="middle" fill="#79c0ff" font-size="11.5" font-weight="600">Public Repos: 4</text>
   <rect x="221" y="172" width="191" height="24" rx="6" fill="#111c2d" stroke="#1f3a5f"/>
-  <text x="316.5" y="188" text-anchor="middle" fill="#79c0ff" font-size="11.5" font-weight="600">Last Push: -</text>
+  <text x="316.5" y="188" text-anchor="middle" fill="#79c0ff" font-size="11.5" font-weight="600">Last Push: 2026-11-14</text>
 
   <!-- Right Card: Languages & Recent Commits -->
   <rect x="448.5" y="0.5" width="431" height="213" rx="12" fill="#0d1117" stroke="#30363d"/>
@@ -51,10 +51,28 @@
   <text x="860" y="34" text-anchor="end" fill="#8b949e" font-size="11.5">Public Repos</text>
   <g clip-path="url(#langBarClip-dark)">
     <rect x="468.0" y="58.0" width="392.0" height="10.0" fill="#21262d"/>
-      <rect x="468.0" y="58.0" width="392.0" height="10.0" fill="#21262d"/>
+      <rect x="468.0" y="58.0" width="243.0" height="10.0" fill="#3572A5"/>
+      <rect x="711.0" y="58.0" width="81.1" height="10.0" fill="#3178c6"/>
+      <rect x="792.2" y="58.0" width="25.1" height="10.0" fill="#f1e05a"/>
+      <rect x="817.3" y="58.0" width="42.7" height="10.0" fill="#A97BFF"/>
     <rect x="468.0" y="58.0" width="392.0" height="10.0" fill="url(#barShimmer-dark)"/>
   </g>
-  <text x="468" y="86" fill="#8b949e" font-size="11.5">No language data yet</text>
+  <circle cx="472.0" cy="80.0" r="4" fill="#3572A5"/>
+  <text x="482.0" y="84.0" fill="#c9d1d9" font-size="11.5" font-weight="600">Python <tspan fill="#8b949e" font-weight="400">62.0%</tspan></text>
+  <circle cx="668.0" cy="80.0" r="4" fill="#3178c6"/>
+  <text x="678.0" y="84.0" fill="#c9d1d9" font-size="11.5" font-weight="600">TypeScript <tspan fill="#8b949e" font-weight="400">20.7%</tspan></text>
+  <circle cx="472.0" cy="97.0" r="4" fill="#f1e05a"/>
+  <text x="482.0" y="101.0" fill="#c9d1d9" font-size="11.5" font-weight="600">JavaScript <tspan fill="#8b949e" font-weight="400">6.4%</tspan></text>
+  <circle cx="668.0" cy="97.0" r="4" fill="#A97BFF"/>
+  <text x="678.0" y="101.0" fill="#c9d1d9" font-size="11.5" font-weight="600">Kotlin <tspan fill="#8b949e" font-weight="400">4.1%</tspan></text>
   <line x1="468" y1="114" x2="860" y2="114" stroke="#21262d"/>
-  <text x="468" y="142" fill="#8b949e" font-size="11.5">No recent public commits</text>
+  <circle cx="473" cy="132.0" r="3" fill="#3fb950"/>
+  <text x="484" y="136.0" fill="#c9d1d9" font-size="11.5" font-weight="600">seoul-bike-pulse <tspan fill="#8b949e" font-weight="400">· feat: initial public releas...</tspan></text>
+  <text x="860" y="136.0" text-anchor="end" fill="#8b949e" font-family="'Cascadia Mono', Consolas, monospace" font-size="11">2026-11-14</text>
+  <circle cx="473" cy="156.0" r="3" fill="#3fb950"/>
+  <text x="484" y="160.0" fill="#c9d1d9" font-size="11.5" font-weight="600">CTF_Web <tspan fill="#8b949e" font-weight="400">· feat: initial public release of CTF_Web</tspan></text>
+  <text x="860" y="160.0" text-anchor="end" fill="#8b949e" font-family="'Cascadia Mono', Consolas, monospace" font-size="11">2026-11-14</text>
+  <circle cx="473" cy="180.0" r="3" fill="#3fb950"/>
+  <text x="484" y="184.0" fill="#c9d1d9" font-size="11.5" font-weight="600">HandCode <tspan fill="#8b949e" font-weight="400">· feat: initial public release of Han...</tspan></text>
+  <text x="860" y="184.0" text-anchor="end" fill="#8b949e" font-family="'Cascadia Mono', Consolas, monospace" font-size="11">2026-11-14</text>
 </svg>
