@@ -40,9 +40,9 @@ Hello
 <!-- SNAKE:START -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg?v=b6aa12d9" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg?v=9be91a60" />
-    <img src="./assets/snake-light.svg?v=9be91a60" alt="Contribution Snake Animation" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg?v=f199f780" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg?v=6ca7c5ce" />
+    <img src="./assets/snake-light.svg?v=6ca7c5ce" alt="Contribution Snake Animation" width="100%" />
   </picture>
 </p>
 <!-- SNAKE:END -->
